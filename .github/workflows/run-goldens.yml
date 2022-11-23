@@ -28,5 +28,4 @@ jobs:
           flutter-version: "3.3.8"
 
       - name: Run golden tests
-        working-directory: ./libs/spend_lib
         run: flutter test
