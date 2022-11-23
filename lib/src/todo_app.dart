@@ -68,7 +68,7 @@ class _TodoListState extends State<TodoList> {
         }).toList(),
       ),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.yellow,
           onPressed: () => _displayDialog(),
           tooltip: 'Add Item',
           child: const Icon(Icons.add)),
