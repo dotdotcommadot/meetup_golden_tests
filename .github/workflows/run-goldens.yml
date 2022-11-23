@@ -29,3 +29,10 @@ jobs:
 
       - name: Run golden tests
         run: flutter test
+
+      - uses: actions/upload-artifact@v3
+        if: failure() && github.event_name == 'pull_request'
+        with:
+          name: golden-failures
+          path: test/failures
+          if-no-files-found: ignore
